@@ -1,0 +1,160 @@
+
+
+.titleMenu{
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+}
+
+.mainContents{
+    margin-top: -5px;
+}
+
+.tableItems{
+    flex-direction: row;
+}
+
+
+.table .tableHead{
+    background: #252525;
+    color:#fff;
+}
+
+.table th{
+    letter-spacing: .5px;
+}
+
+.table th:nth-child(1){
+    text-transform:uppercase !important;
+}
+
+.buttonCreate{
+    margin-top: 5px;
+    display:flex;
+    justify-content: end !important;
+    background: none;
+    padding:0 !important;
+}
+
+.buttonCreate .btn{
+    margin:5px;
+}
+
+
+.editItem{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.buttonEditItem, .buttonEditItem:hover, .buttonEditItem:focus{
+    color:#fff;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.bold{
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.modal-title{
+    font-size: 1.4rem !important;
+    letter-spacing: .5px;
+}
+
+.inputsGroup{
+    margin: 10px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputsGroup .input-group{
+    margin: 10px 0;
+}
+
+.inputsGroup .input-group-text{
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.buttonsEditRemove .col-sm-4{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#modalItem .btn{
+    font-weight: 600;
+}
+
+.modal-body{ /* Alinhar tudo ao centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spinner-border{
+    width:3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+}
+
+.modal-header, .modal-footer{
+    border: none !important;
+}
+
+.modal-content{
+    border: none !important;;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform .3s ease-out !important;
+}
+
+.tableBody td:nth-child(6){
+    margin: 0 auto;
+}
+
+.tableBody td:nth-child(6) .col-sm-4{
+    margin: 5px;
+}
+
+
+@media(min-width:1200px){
+    .table, .buttonCreate{
+        width: 75%;
+    }
+}
+
+@media(max-width:592px){
+    .buttonsEditRemove .col-sm-4{
+        width: 75%;
+    }
+
+    .buttonCreate .col-sm-12{
+        text-align: center;
+    }
+
+    .buttonCreate .btn{
+        width:75%;
+    }
+
+    .tableHead tr{
+        background: #252525;
+    }
+
+    .tableBody tr,.tableHead tr{
+        background: #fff;
+        color:#252525;
+        font-size: 1.2rem;
+    }
+
+    .tableBody tr:nth-child(odd){
+        background: #252525;
+        color:#fff;
+    }
+}
